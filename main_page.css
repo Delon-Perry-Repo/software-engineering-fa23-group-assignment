@@ -1,0 +1,43 @@
+#Banner {
+    height: 105px;
+    text-align: center;
+    color: white;
+    background-image: url("res/UTeeSA_Banner.png");
+    padding: 15px;
+}
+.button {
+    text-decoration: none;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    font-size: 20px;
+}
+.row {
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    margin-top: 10px;
+}
+.items {
+    max-height: 25%;
+    width: 23%;
+    
+}
+#itemTable {
+    width: 100%;
+    border: 2px solid;
+    border-color: white;
+}
+#navBar{
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    font-size: larger;
+}
+a.tab:link, a.tab:hover, a.tab:visited {
+    color: white;
+    text-decoration: none;
+}
+body {
+    background-color: black;
+}
