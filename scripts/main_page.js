@@ -7,8 +7,10 @@ const MAX_COLUMNS = 4;
 let imageLoc = ['res/item1.png', 'res/item2.png', 'res/item3.png' , 'res/item4.png', 'res/item5.png', 'res/item6.png', 'res/item7.png', 'res/item8.png', 'res/item9.png', 'res/item10.png', 'res/item11.png', 'res/item12.png', 'res/item13.png', 'res/item14.png', 'res/item15.png', 'res/item16.png'];
 /* intialize empty string */
 let imgElement = '';
+let isOn = 0;
 
 addItems();
+
 
 /* adds items to the main page*/
 function addItems(){
@@ -42,5 +44,24 @@ function addItems(){
 
         /* resets the string */
         imgElement = '';
+    }
+}
+
+function inputSearchBar(){
+
+    let searchBar = '<div class="search"><input type="text" name="searchInput" placeholder="Search..." class="input" id="searchButton"> <button id="goButton" onclick="searchItem()">Go</button></div>';
+
+    document.getElementById('searchButton').outerHTML = searchBar;
+}
+function searchItem() {
+    const inQuery = document.getElementById("searchButton").value;
+    alert(inQuery);
+}
+function toggleFilter(){
+    var x = document.getElementById("filterPopUp");
+    if (x.style.display === "block") {
+        x.style.display = "none";
+    } else {
+        x.style.display = "block";
     }
 }

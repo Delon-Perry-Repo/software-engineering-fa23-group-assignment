@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="scripts/main_page.css">
+    <title>UTeeSA</title>
+</head>
+<body>
+    <div id="Banner" >
+        <h1>U Tee S A</h1>
+        <hr />
+        <div id="navBar">
+            <button href="account.html" class="button" onclick="window.location.href='account.html';">
+                <b>
+                    Account
+                </b>
+            </button>
+            <button href="filter.html" class="button" onclick="window.location.href='filter.html';">
+                <b>
+                    Filter
+                </b>
+            </button>
+            <button href="search.html" class="button" onclick="window.location.href='search.html';">
+                <b>
+                    Search
+                </b>
+            </button>
+        </div>
+    </div>
+    <div id="searchBar">
+            <div >
+                <input type="text" name="searchInput" placeholder="Please Enter item name" id="searchInput">
+            </div>
+            <div>
+                <button class="button" onclick="searchQuery()" id="submitButton">sub</button>
+            </div>
+            
+    </div>
+
+    <script src="scripts/search.js"></script>
+</body>
+</html>
