@@ -137,11 +137,11 @@ input[type=text], input[type=password] {
 }
 
 .button-container {
-  background-color: #04AA6D;
+  background-color: black;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
-  border: none;
+  border: 10px thick white;
   cursor: pointer;
   width: auto;
 }
@@ -154,15 +154,14 @@ button:hover {
 .cancelbtn {
   width: auto;
   padding: 10px 18px;
-  background-color: #f44336;
-}
-
-img.avatar {
-  width: 40%;
-  border-radius: 50%;
+  background-color: #7c0a02;
+  color: white;
 }
 
 .container {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   padding: 16px;
   width: auto;
   height: auto;
@@ -238,5 +237,9 @@ span.psw {
   }
 }
 
-
+.hr-split {
+  padding: 2px;
+  background: #000;
+  width: 100%;
+}
 
