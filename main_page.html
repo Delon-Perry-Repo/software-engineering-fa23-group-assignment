@@ -18,7 +18,8 @@
                     onclick="document.getElementById('id01').style.display='block'" style="width:auto;">
                 <div id="id01" class="modal">
                     <form class="modal-content animate" action="/action_page.php" method="post">
-                        <div class="container">
+                        <div class="container" style="background-image: url(res/UTeeSA_Banner.png);">
+                            <h1>Login-In</h1>
                             <label for="uname"><b>Username</b></label>
                             <input type="text" placeholder="Enter Username" name="uname" required>
 
@@ -28,18 +29,19 @@
                             <button type="submit" class="button-container">Login</button>
                             <button type="button" class="button-container" onclick="toggleContainers()">New User?
                                 Sign-Up</button>
-
+                                <hr class="hr-split">
                         </div>
-                        <div class="container" style="background-color:#f1f1f1">
+                        <div class="container" style="background-image: url(res/UTeeSA_Banner.png);">
                             <button type="button" onclick="document.getElementById('id01').style.display='none'"
                                 class="cancelbtn">Cancel</button>
-                            <span class="psw"><a href="#">Forgot Password?</a></span>
+                            <span class="psw"><a href="#" style="color: #f1f1f1;">Forgot Password?</a></span>
                         </div>
                     </form>
                 </div>
                 <div id="id02" class="modal" style="display: none">
                     <form class="modal-content animate" action="/action_page.php" method="post">
-                        <div class="container">
+                        <div class="container" style="background-image: url(res/UTeeSA_Banner.png);">
+                            <h1>Create New Account</h1>
                             <label for="newuname"><b>New Username</b></label>
                             <input type="text" placeholder="Enter New Username" name="newuname" required>
 
@@ -53,9 +55,9 @@
                             <input type="password" placeholder="Confirm New Password" name="confirmnewpsw" required>
 
                             <button type="submit" class="button-container">Create Account</button>
-
+                            <hr class="hr-split">
                         </div>
-                        <div class="container" style="background-color:#f1f1f1">
+                        <div class="container" style="background-image: url(res/UTeeSA_Banner.png);">
                             <button type="button" onclick="document.getElementById('id02').style.display='none'"
                                 class="cancelbtn">Cancel</button>
                         </div>
