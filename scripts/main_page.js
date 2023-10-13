@@ -65,3 +65,37 @@ function toggleFilter(){
         x.style.display = "block";
     }
 }
+
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+
+var modal_su = document.getElementById('id02');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal_su) {
+        modal_su.style.display = "none";
+    }
+}
+
+function toggleContainers() {
+    var container01 = document.getElementById('id01');
+    var container02 = document.getElementById('id02');
+
+    if (container01.style.display == 'block') {
+        container01.style.display = 'none';  // Close the original container
+        container02.style.display = 'block';  // Open the new sign-up container
+    } else {
+        container01.style.display = 'block';  // Open the original container
+        container02.style.display = 'none';   // Close the new sign-up container
+    }
+}
+
+
+
