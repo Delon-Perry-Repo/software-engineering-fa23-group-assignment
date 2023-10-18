@@ -46,7 +46,6 @@ function addItems(){
         imgElement = '';
     }
 }
-
 function inputSearchBar(){
 
     let searchBar = '<div class="search"><input type="text" name="searchInput" placeholder="Search..." class="input" id="searchButton"> <button id="goButton" onclick="searchItem()">Go</button></div>';
