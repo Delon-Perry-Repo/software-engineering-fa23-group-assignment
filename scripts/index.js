@@ -4,7 +4,7 @@ const MAX_COLUMNS = 4;
   THE PERCENTAGES MUST BE CHANGED TO ((100/MAX_COLUMNS) - 2) */
 
 /* String array of images file locations */
-let imageLoc = ['res/item1.png', 'res/item2.png', 'res/item3.png' , 'res/item4.png', 'res/item5.png', 'res/item6.png', 'res/item7.png', 'res/item8.png', 'res/item9.png', 'res/item10.png', 'res/item11.png', 'res/item12.png', 'res/item13.png', 'res/item14.png', 'res/item15.png', 'res/item16.png'];
+let imageLoc = ['../res/item1.png', '../res/item2.png', '../res/item3.png' , '../res/item4.png', '../res/item5.png', '../res/item6.png', '../res/item7.png', '../res/item8.png', '../res/item9.png', '../res/item10.png', '../res/item11.png', '../res/item12.png', '../res/item13.png', '../res/item14.png', '../res/item15.png', '../res/item16.png'];
 /* intialize empty string */
 let imgElement = '';
 let isOn = 0;

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../styles/index.css">
+    <title>UTeeSA</title>
+</head>
+<body>
+    <div id="headBar">
+        <h1 id="Banner">U Tee S A</h1>
+        <hr >
+        <div id="navBar">
+            <div id="leftBar">
+                <input type="image" src="../res/accountIcon.png" class="button" id="accountButton" alt="Account" onclick="window.location.href='account.html';">
+                <input type="image" src="../res/filterIcon.png" class="button" id="filterButton" onclick="toggleFilter()" alt="Filter">
+            </div>
+            <div id="rightBar">
+                <input type="image" src="../res/searchIcon.png" class="button" id="searchButton" onclick="inputSearchBar()" alt="Search">
+                <input type="image" src="../res/cartIcon.png" class="button" id="cartButton" alt="Cart" onclick="window.location.href='shoppingCart.html';">
+            </div>
+        </div>
+        
+    </div>
+    <div id="body">
+        <div id="filterPopUp" class="filter">
+            <form>
+                <input type="radio" id="sortByPrice" name="filterOptions" value="byPrice"><label for="sortByPrice">Sort By Price</label>
+                <input type="radio" id="sortByAvailability" name="filterOptions" value="byAvailabilty"><label for="sortByAvailability">Sort By Availability</label>
+            </form>
+        </div>
+        <div id="table"></div>
+    </div>
+    <div id="footer"></div>
+    <script src="../scripts/index.js"></script>
+</body>
+</html>
