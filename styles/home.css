@@ -1,0 +1,113 @@
+body {
+    background-color: black;
+}
+#headBar {
+    background-image: url("../res/UTeeSA_Banner.png");
+}
+#Banner {
+    height: 40%;
+    text-align: center;
+    color: white;
+    padding: 15px;
+    margin: 0px 0px 0px 0px;
+}
+
+hr {
+    margin-bottom: -1px;
+}
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-image: url("../res/UTeeSA_Banner.png");
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li{
+    list-style: none;
+    padding: 0 50px;
+    position: relative;
+}
+
+#navbar li a{
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: 100;
+    color: white;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: gold
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 50%;
+    height: 2px;
+    background: gold;
+    position: absolute;
+    bottom: -4px;
+    left: 50px;
+}
+
+#hero{
+    background-image: url("../res/homePageImage.png");
+    height: 90vh;
+    width: 90%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: top 25px  right 0;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#hero h1{
+    color: gold;
+    font-size: 60px;
+    line-height: 0px;
+}
+
+#hero h2{
+    color: white;
+    font-size: 60px;
+    line-height: 0px;
+}
+
+#hero h4{
+    color: white;
+    font-size: 40px;
+    line-height: 0px;
+}
+
+#hero p{
+    color: white;
+    font-size: 30px;
+    line-height: 0px;
+}
+
+#hero button{
+    background-image: url("../res/shopButton.png");
+    background-color: transparent;
+    border: none;
+    height: 15%;
+    width: 30%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
