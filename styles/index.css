@@ -1,3 +1,9 @@
+HTML{
+    height:100%;
+    width: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 body {
     background-color: black;
 }
@@ -124,6 +130,27 @@ hr {
     width: 23%;
     
 }
+
+#adminButton{
+    width: 35px;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 25px;
+}
+
+#adminButton:hover{
+    background-color: rgba(186, 186, 186, 0.5);
+    transition: 0.7s;
+}
+
+#adminButton:visited{
+    background-color: none;
+}
+
+#adminButton button:visited{
+    background-color: none;
+}
+
 
 
 

@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Orders</title>
+    <link href="styles/orders.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="scripts/admin.js">
+    </script>
+  </head>
+
+  <body>
+    <div class="header">
+
+      <div class="header-left">
+
+        <ul>
+          <li><img src="img/uteesa_logo.png" id="logo"></li>
+          <li id="header-subtitle">ORDERS</li>
+        </ul>
+
+      </div>
+
+
+      <div class="navbar">
+
+        <ul>
+          <li id="return"><a href="./admin.html">HOME</a></li>
+        </ul>
+
+      </div>
+
+      </div>
+
+    <div class="content">
+
+      <div class="orderButtons">
+        <div class="active">
+          <button onclick="test(currOrders)">Show Active Orders</button>
+          <button onclick="sortByDate(currOrders)">Sort Active by Date</button>
+          <button onclick="sortByCustomer(currOrders)">Sort Active by Customer</button>
+        </div>
+  
+        <div class="done">
+          <button onclick="loadComplete(pastOrders)">Show Completed Orders</button>
+          <button onclick="sortByDate(pastOrders)">Sort Completed by Date</button>
+          <button onclick="sortByCustomer(pastOrders)">Sort Completed by Customer</button>
+        </div>
+
+        <button onclick="resetOrders()">Reset Orders</button>
+      </div>
+      
+
+    <div class="orders"> 
+      <table id="order-info-tables">
+        <tr>
+          <th>Order Number</th>
+          <th>Customer</th>
+          <th>Date Placed</th>
+          <th>Status</th>
+          <th>Price</th>
+          <th>Quantity</th>
+        </tr>
+
+        <tr id="default">
+          <td>NO ORDERS TO SHOW</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+          <td>-</td>
+        </tr>
+
+        <tbody id="tableBody">
+
+          
+
+        </tbody>
+        
+      </table>
+    </div> 
+      
+    </div>
+
+    
+
+
+  </body>
+  <div id="form-here">
+    
+  <div id="orders" class="order-popup">
+
+      <h2>Order Summary</h2>
+
+      <div class="order-info">
+        
+        <div class="order-num">
+          <h3 id="order-num">Order Number #12345</h3>
+        </div>
+
+        <div class="order-date">
+          <p id="order-date">Date Placed: 11/02/2023</p>
+        </div>
+        
+        <div class="order-total">
+          <p id="order-total">Order Total: $50.00 USD</p>
+        </div>
+
+        <div class="order-customer">
+          <p id="order-customer">Customer: Jane Doe</p>
+        </div>
+        
+        <!-- Option for discount codes/price adjustment -->
+        <div class="order-items">
+          <table class="order-table" id="ordtb">
+            <tr>
+              
+              <th>ITEMS</th>
+              <th>DESCRIPTION</th>
+              <th>SIZE</th>
+              <th>PRICE</th>
+              
+            </tr>
+
+            <tbody id="orderBody">
+              
+            <tr>
+              
+              <td>
+                <img src="img/Cat.png"/>
+              </td>
+              <td>
+                <p>CAT SHIRT</p>
+                <p>White shirt with black cat graphic.</p>
+              </td>
+              <td>M</td>
+              <td>$10.00</td>
+              
+            </tr>
+              
+            </tbody>
+          </table>
+        </div>
+
+        <div class="price-info">
+
+          <div class="order-sub">
+            <p>Shopping Bag Total: </p>
+            <p id="sbtQty">3 items</p>
+            <p id="sbtPrice">$50.00</p></p>
+          </div> 
+
+          <div class="order-tax">
+            <p>Shopping Tax:</p>
+            <p>Sales Tax (8.25%)</p>
+            <p id="tax">$2.50</p>
+          </div>
+
+          <div class="order-dc" id="order-dc">
+            <p>Discount Codes:</p>
+            <p id="dcCode">WINTER2023</p>
+            <p class="discount-amt" id="dcAmt">-$5.00</p>
+          </div>
+
+          <div class="order-ttl">
+            <p>Order Total:</p>
+            <p id="ttlTotal">$47.50 USD</p>
+          </div>
+          
+        </div>
+
+        <div class="order-btns">
+          <button class="buttons" id="close-order" onclick="completeOrder()">COMPLETE</button>
+          <button class="buttons" onclick="closeOrder()">CLOSE</button>
+        </div> 
+        
+      </div>
+        
+      </div>
+      
+
+  </div>
+  </div>
+
+</html>
