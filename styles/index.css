@@ -1,3 +1,9 @@
+HTML{
+    height:100%;
+    width: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 body {
     background-color: black;
 }
@@ -14,6 +20,53 @@ body {
 
 hr {
     margin-bottom: -1px;
+}
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background-image: url("../res/UTeeSA_Banner.png");
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li{
+    list-style: none;
+    padding: 0 50px;
+    position: relative;
+}
+
+#navbar li a{
+    text-decoration: none;
+    font-size: 40px;
+    font-weight: 100;
+    color: white;
+    transition: 0.3s ease;
+}
+
+#navbar li a:hover,
+#navbar li a.active {
+    color: gold
+}
+
+#navbar li a.active::after,
+#navbar li a:hover::after {
+    content: "";
+    width: 50%;
+    height: 2px;
+    background: gold;
+    position: absolute;
+    bottom: -4px;
+    left: 50px;
 }
 
 /* Start of Search Bar CSS */
@@ -124,6 +177,27 @@ hr {
     width: 23%;
     
 }
+
+#adminButton{
+    width: 35px;
+    margin-left: 5%;
+    margin-right: 5%;
+    height: 25px;
+}
+
+#adminButton:hover{
+    background-color: rgba(186, 186, 186, 0.5);
+    transition: 0.7s;
+}
+
+#adminButton:visited{
+    background-color: none;
+}
+
+#adminButton button:visited{
+    background-color: none;
+}
+
 
 
 

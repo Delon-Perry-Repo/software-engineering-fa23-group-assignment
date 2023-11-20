@@ -1,0 +1,544 @@
+html {
+  height: 100%;
+  width: 100%;
+  background-color: #231f20;
+  color: white;
+}
+
+.header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: sans-serif;
+  margin-left: 0pt; 
+  padding-left: 0pt;
+}
+
+.navButtons{
+  display: flex; 
+  margin-top: 20px;
+  margin-left: 3%;
+  width: 20%;
+  justify-content: space-between;
+}
+
+.navButtons button{
+  font-weight: bold;
+  border: none; 
+  padding: 7px;
+}
+
+#header-subtitle{
+  padding-left: 10px;
+}
+
+#logo {
+  width: 150px;
+}
+
+.navbar ul {
+  list-style: none;
+  font-weight: bold;
+}
+
+.navbar ul li a {
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    list-style: none;
+    display: block; 
+    color: white;
+    padding-right: 25px;
+}
+
+.navbar ul li a:visited{
+  color: white;
+}
+
+.header ul{
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  gap: 0px 0px;
+}
+
+#header-title {
+  font-size: 20pt;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+#header-subtitle {
+  font-family: sans-serif; 
+  font-weight: bold;
+}
+
+.header ul li{
+  display: flex; 
+  flex-direction: column;
+  column-gap: 0pt;
+  margin-left: 0pt; 
+  padding-left: 0pt; 
+  list-style: none;
+}
+
+.header h2{
+  font-size: 14px;
+}
+
+.inv {
+  display: flex; 
+  flex-direction: column;
+  font-family: sans-serif;
+  justify-content: space-between;
+  width: 80%;
+  padding-left: 150px; 
+  padding-right: 200px; 
+  padding-top: 100px;
+}
+
+.items {
+  display: flex;  
+  flex-direction: row; 
+  justify-content: space-between; 
+  background-color: #838982;
+  margin-bottom: 10px; 
+}
+
+.pic-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-items: center;
+  height: 220px;
+}
+
+.item-info {
+  display: flex; 
+  flex-direction: column;
+  justify-content:start;
+  height: 180px;
+  margin-left: 30px;
+}
+
+.inv img{
+  width: 200px;
+  height: 200px;
+  display: flex; 
+  justify-self: center;
+  justify-content: center;
+}
+
+.item-options {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: space-around;
+  justify-self: center;
+  width: 10%;
+  padding-right: 20px; 
+}
+
+.item-options button{
+   margin-bottom: 5px;
+   border: 1cm;
+   border-color: black;
+   background-color: white;
+   font-family: sans-serif;
+   font-weight: bold;
+   font-size: 14px;
+   padding: 5px;
+}
+
+.item-options button:hover{
+  background-color: #edebeb;
+  border-color: black;
+}
+
+.item-info{
+  margin-top: 0; 
+  margin-bottom: 0; 
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.item-price {
+  font-weight: bold;
+  color: #0755a6;
+  margin-top: 0; 
+  margin-bottom: 0; 
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.item-name {
+  margin-top: 20px; 
+  margin-bottom: 0; 
+  padding-top: 0;
+  padding-bottom: 0;
+  color: #231f20;
+}
+
+.item-desc {
+  margin-top: 10px; 
+  margin-bottom: 0; 
+  padding-top: 0;
+  padding-bottom: 0;
+  color: #231f20;
+}
+
+.mat {
+  display: flex; 
+  flex-direction: row; 
+  color: #231f20;
+}
+
+.item-material {
+  font-weight: bold;
+  margin-right: 10px;
+  color: #231f20;
+}
+
+.item-number {
+  color: darkslategray; 
+  font-style: italic;
+  font-weight: bold;
+  margin-top: 0; 
+  margin-bottom: 0; 
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.item-size {
+  color:#231f20;
+  font-style: italic;
+  font-weight: bold;
+  margin-top: 0; 
+  margin-bottom: 0; 
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.item-img {
+  display: flex;
+  padding-right: 12px;
+  background-color: white;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.create-inv {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+#empty-inv {
+  display: none;
+  color: red;
+  margin-top: 0;
+  align-self: center;
+  font-size: 10pt;
+  font-family: sans-serif;
+}
+
+.edit-form-popup {
+  display: none;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 40%;
+  height: 70%px;
+  padding: 10px;
+
+  position: fixed; 
+  bottom: 0;
+  right: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+  background-color: white;
+  font-family: sans-serif;
+  align-items: center;
+  align-self: center;
+
+  margin-right: 30;
+  margin-top: 15%;
+}
+
+#default-opt{
+  color: lightslategray;
+}
+
+.edit-form-popup h2{
+  align-self: center;
+  padding-left: 6%;
+}
+
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.create-inv {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+#empty-inv {
+  display: none;
+  color: red;
+  margin-top: 0;
+  align-self: center;
+  font-size: 10pt;
+  font-family: sans-serif;
+}
+
+.form-popup {
+  display: none;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 40%;
+  height: 80%;
+  padding: 10px;
+
+  position: fixed;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+  bottom: 10%;
+  background-color: white;
+  font-family: sans-serif;
+  align-items: center;
+  align-self: center;
+
+  margin-left: 30%;
+  margin-top: 10%;
+}
+
+.createBtns {
+  display: flex; 
+  flex-direction: row;
+  width: 30%;
+  margin-left: 35%;
+  justify-content: space-between;
+  margin-top: 10%;
+  font-weight: bold;
+}
+
+#default-opt{
+  color: lightslategray;
+}
+
+.form-popup h2{
+  align-self: center;
+  padding-left: 6%;
+}
+
+.form-popup label{
+  padding-left: 40px;
+  font-weight: bold;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 80%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  margin-left: 7%;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.create-inv {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+#empty-inv {
+  display: none;
+  color: red;
+  margin-top: 0;
+  align-self: center;
+  font-size: 10pt;
+  font-family: sans-serif;
+}
+
+.form-popup {
+  display: none;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 40%;
+  height: 80%;
+  padding: 10px;
+
+  position: fixed;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+  bottom: 10%;
+  background-color: white;
+  font-family: sans-serif;
+  align-items: center;
+  align-self: center;
+
+  margin-left: 30%;
+  margin-top: 10%;
+}
+
+.createBtns {
+  display: flex; 
+  flex-direction: row;
+  width: 30%;
+  margin-left: 35%;
+  justify-content: space-between;
+  margin-top: 10%;
+  font-weight: bold;
+}
+
+#default-opt{
+  color: lightslategray;
+}
+
+.form-popup h2{
+  align-self: center;
+  padding-left: 6%;
+}
+
+.form-popup label{
+  padding-left: 40px;
+  font-weight: bold;
+}
+
+
+#confirmShirt{
+  display: none;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 40%;
+  height: 80%;
+  padding: 10px;
+
+  position: fixed;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+  bottom: 10%;
+  background-color: white;
+  font-family: sans-serif;
+  align-items: center;
+  align-self: center;
+
+  margin-left: 30%;
+  margin-top: 10%;
+}
+
+#editForm{
+  display: none;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 40%;
+  height: 80%;
+  padding: 10px;
+
+  position: fixed;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+  bottom: 10%;
+  background-color: white;
+  font-family: sans-serif;
+  align-items: center;
+  align-self: center;
+
+  margin-left: 30%;
+  margin-top: 10%;
+}
+
+#editForm input{
+  width: 70%;
+  height: 30%;
+}
+
+#editForm p{
+  margin-right: 0;
+  font-weight: bold;
+}
+
+.editInput{
+  display: flex; 
+  flex-direction: column;
+}
+
+#sizes {
+  width: 40%;
+}
+
+.btn{
+  background-color: lightgray;
+  color: black;
+  padding: 16px 20px;
+  border: none;
+  font-weight: bold;
+  width: 15%;
+  margin-left: 30%;
+  margin-top: 5%;
+}
+
+.btn:hover{
+  background-color: gray;
+}
+
+.editFormCont{
+  margin-left: 15%;
+  width: 100%;
+}
+
+#editForm h2{
+  color:#231f20;
+}
+
+#editForm p{
+  color:#231f20;
+}
+
+.form-popup{
+  height: 90%;
+  margin-top: 5%;
+  bottom: 5%;
+}
+
+.form-container{
+  height: 100%;
+  color:#231f20;
+}
+
+#confirmShirt{
+  color:#231f20;
+}
+

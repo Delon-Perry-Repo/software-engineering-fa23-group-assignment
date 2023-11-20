@@ -1,3 +1,9 @@
+HTML{
+    height:100%;
+    width: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 body {
     background-color: black;
 }
@@ -22,7 +28,6 @@ hr {
     justify-content: space-between;
     padding: 20px 80px;
     background-image: url("../res/UTeeSA_Banner.png");
-    position: sticky;
     top: 0;
     left: 0;
 }
@@ -80,25 +85,25 @@ hr {
 #hero h1{
     color: gold;
     font-size: 60px;
-    line-height: 0px;
+    line-height: 100px;
 }
 
 #hero h2{
     color: white;
     font-size: 60px;
-    line-height: 0px;
+    line-height: 100px;
 }
 
 #hero h4{
     color: white;
     font-size: 40px;
-    line-height: 0px;
+    line-height: 100px;
 }
 
 #hero p{
     color: white;
     font-size: 30px;
-    line-height: 0px;
+    line-height: 100px;
 }
 
 #hero button{

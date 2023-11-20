@@ -1,0 +1,374 @@
+@font-face {
+  font-family: "KdamThmorPro";
+  src: url("/Users/sammy/Desktop/software-engineering-fa23-group-assignment-main/fonts/KdamThmorPro-Regular.ttf") format("truetype");
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  background-color: #231f20;
+  color: white;
+}
+
+.outer{
+  display: flex; 
+  flex-direction: column;
+}
+
+button{
+  border: none;
+}
+
+h4{
+  font-size: 200%;
+  font-family: "KdamThmorPro", sans-serif;
+}
+
+#returnHome {
+  color: white;
+  font-weight: bold;
+}
+
+.header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: sans-serif;
+  margin-left: 0pt; 
+  padding-left: 0pt;
+}
+
+
+#header-subtitle{
+  padding-left: 10px;
+}
+
+#logo {
+  width: 150px;
+}
+
+.navbar ul {
+  list-style: none;
+}
+
+.navbar ul li a {
+    font-family: sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    list-style: none;
+    display: block; 
+    color: black; 
+    padding-right: 25px;
+}
+
+.navbar ul li a:visited{
+  color: black;
+}
+
+#options {
+  display: flex; 
+  flex-direction: row;
+  font-family: sans-serif; 
+  justify-content: space-between;
+  margin: auto; 
+  padding-left: 200px; 
+  padding-right: 200px;
+  padding-top: 100px;
+}
+
+#inv {
+  display: flex; 
+  justify-content: flex-start;
+  flex-direction: column;
+  height: 350px; 
+  width: 300px;
+  background-color: #be5f49;
+}
+
+#inv h4{
+  align-self: center;
+  margin-bottom: 60px;
+}
+
+#inv input {
+  width: 200px; 
+  align-self: center;
+  margin-bottom: 10px;
+}
+
+#inv button{
+  width: 200px;
+  align-self: center;
+  margin-bottom: 50px; 
+  font-family: sans-serif;
+  border-radius: 0px;
+  font-weight: bold;
+}
+
+#ord {
+  display: flex; 
+  flex-direction: column; 
+  justify-content: flex-start;
+  align-items: center;
+  height: 350px; 
+  width: 300px;
+  background-color: #838982;
+}
+
+#ord h4{
+  margin-bottom: 60px;
+}
+
+#ord button{
+  width: 200px;
+  align-self: center;
+  margin-bottom: 50px; 
+  font-family: sans-serif;
+  border-radius: 0px;
+  font-weight: bold;
+}
+
+#user {
+  display: flex; 
+  justify-content: flex-start;
+  flex-direction: column; 
+  align-items: center;
+  height: 350px; 
+  width: 300px;
+  background-color: #45495e;
+}
+
+#user h4{
+  margin-bottom: 60px;
+}
+
+#user input {
+  width: 200px; 
+  align-self: center;
+  margin-bottom: 10px;
+}
+
+#user button{
+  width: 200px;
+  align-self: center;
+  margin-bottom: 50px; 
+  font-family: sans-serif;
+  border-radius: 0px;
+  font-weight: bold;
+}
+
+.header ul{
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  gap: 0px 0px;
+}
+
+#header-title {
+  font-size: 20pt;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+#header-subtitle {
+  font-family: sans-serif; 
+  font-weight: bold;
+}
+
+.header ul li{
+  display: flex; 
+  flex-direction: column;
+  column-gap: 0pt;
+  margin-left: 0pt; 
+  padding-left: 0pt; 
+}
+
+.header h2{
+  font-size: 14px;
+}
+
+/* Button used to open the contact form - fixed at the bottom of the page */
+.create-inv {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 23px;
+  right: 28px;
+  width: 280px;
+}
+
+#empty-inv {
+  display: none;
+  color: red;
+  margin-top: 0;
+  align-self: center;
+  font-size: 10pt;
+  font-family: sans-serif;
+}
+
+.form-popup {
+  display: none;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 40%;
+  height: 80%;
+  padding: 10px;
+
+  position: fixed;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+  bottom: 10%;
+  background-color:#231f20;
+  font-family: sans-serif;
+  align-items: center;
+  align-self: center;
+
+  margin-left: 30%;
+  margin-top: 10%;
+}
+
+.createBtns {
+  display: flex; 
+  flex-direction: row;
+  width: 30%;
+  margin-left: 35%;
+  justify-content: space-between;
+  margin-top: 10%;
+  font-weight: bold;
+}
+
+#default-opt{
+  color: lightslategray;
+}
+
+.form-popup h2{
+  align-self: center;
+  padding-left: 6%;
+}
+
+.form-popup label{
+  padding-left: 40px;
+  font-weight: bold;
+}
+
+/* Full-width input fields */
+.form-container input[type=text], .form-container input[type=password] {
+  width: 80%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  margin-left: 7%;
+}
+
+/* When the inputs get focus, do something */
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+#confirmShirt{
+  display: none;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 40%;
+  height: 80%;
+  padding: 10px;
+
+  position: fixed;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+  bottom: 10%;
+  background-color:#231f20;
+  font-family: sans-serif;
+  align-items: center;
+  align-self: center;
+
+  margin-left: 30%;
+  margin-top: 10%;
+}
+
+.dcCodes{
+  display: none;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 20%;
+  height: 40%;
+  padding: 10px;
+
+  position: fixed;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+  bottom: 30%;
+  background-color:#231f20;
+  font-family: sans-serif;
+  align-items: center;
+  align-self: center;
+
+  margin-left: 40%;
+  margin-top: 30%;
+}
+
+.dc-buttons{
+  display:flex; 
+  flex-direction: row;
+  width: 50%;
+  margin-left: 0; 
+  justify-content: space-evenly;
+}
+
+table {
+  border-collapse: collapse;
+  border: 2px solid rgb(200,200,200);
+  width: 80%;
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+}
+
+td, th {
+  border: 1px solid rgb(190,190,190);
+  padding: 10px 20px;
+}
+
+th {
+  background-color:#231f20;
+}
+
+td {
+  text-align: center;
+}
+
+.dc-code-table{
+  display: none;
+  flex-direction: column;
+  width: 40%;
+  height: 80%;
+  padding: 10px;
+
+  position: fixed;
+  border: 3px solid #f1f1f1;
+  z-index: 9;
+  bottom: 10%;
+  background-color:#231f20;
+  font-family: sans-serif;
+  align-items: center;
+  align-self: center;
+
+  margin-left: 30%;
+  margin-top: 10%;
+}
+
+.dc-code-table button{
+  margin-top: 10px;
+}
+
+#dc-Codes {
+  height: 60%;
+  width: 50%;
+  margin-left: 25%;
+  margin-top: 20%;
+}
