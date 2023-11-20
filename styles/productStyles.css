@@ -359,11 +359,6 @@ textarea {
   line-height: inherit;
 }
 
-a:visited {
-  color: black;
-  background-color: transparent;
-  text-decoration: none;
-}
 
 button,
 select {
@@ -471,17 +466,6 @@ legend + * {
   -webkit-appearance: button;
 }
 
-.button {
-  margin-top: 2px;
-  width: auto;
-  height: auto;
-  object-position: center bottom;
-}
-
-.button:hover {
-  background-color: rgba(186, 186, 186, 0.5);
-  transition: 0.7s;
-}
 
 output {
   display: inline-block;

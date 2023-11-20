@@ -65,3 +65,7 @@ function toggleFilter(){
         x.style.display = "block";
     }
 }
+
+function logInAdmin(){
+    window.open("login.html");
+}

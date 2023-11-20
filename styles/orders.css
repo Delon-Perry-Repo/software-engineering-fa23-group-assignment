@@ -1,0 +1,286 @@
+html {
+  height: 100%;
+  width: 100%;
+  background-color: #231f20;
+  color: white;
+}
+
+table {
+  border-collapse: collapse;
+  border: 2px solid rgb(200,200,200);
+  width: 100%;
+  letter-spacing: 1px;
+  font-size: 0.8rem;
+}
+
+.orderButtons{
+  display: flex; 
+  flex-direction: row;
+  margin-left: 3%;
+  width: 40%;
+  justify-content: space-between;
+  height: 20%;
+}
+
+.orderButtons button{
+  border: none; 
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.active{
+  display: flex; 
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.done {
+  display: flex; 
+  flex-direction: column;
+}
+
+td, th {
+  border: 1px solid rgb(190,190,190);
+  padding: 10px 20px;
+}
+
+th {
+  background-color: rgb(235,235,235);
+  color: #231f20;
+}
+
+td {
+  text-align: center;
+}
+
+.header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  font-family: sans-serif;
+  margin-left: 0pt; 
+  padding-left: 0pt;
+}
+
+#header-subtitle{
+  padding-left: 10px;
+}
+
+#logo {
+  width: 150px;
+}
+
+.navbar ul {
+  list-style: none;
+  font-weight: bold;
+}
+
+.navbar ul li a {
+    font-family: sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-decoration: none;
+    list-style: none;
+    display: block; 
+    color: white;
+    padding-right: 25px;
+}
+
+.navbar ul li a:visited{
+  color: white;
+}
+
+.header ul{
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  gap: 0px 0px;
+}
+
+#header-title {
+  font-size: 20pt;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+#header-subtitle {
+  font-family: sans-serif; 
+  font-weight: bold;
+}
+
+.header ul li{
+  display: flex; 
+  flex-direction: column;
+  column-gap: 0pt;
+  margin-left: 0pt; 
+  padding-left: 0pt; 
+}
+
+.header h2{
+  font-size: 14px;
+}
+
+.orders{
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  left: 10%;
+  width: 80%;
+  margin-top: 30px;
+
+  font-family: sans-serif; 
+}
+
+.edit-order{
+  display: flex; 
+  flex-direction: column; 
+  justify-content: space-around
+}
+
+.orders th {
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.orders button{
+  border: none;
+  background-color: white;
+  font-weight: bold; 
+  color: #225099;
+}
+
+.orders button:hover{
+  color: #0a1a33;
+  text-decoration: underline;
+}
+
+.active-status{
+  color: green;
+}
+
+.done-status{
+  color:green;
+}
+
+.order-popup {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+
+  width: 60%; 
+  height: 80%;
+  overflow-y: auto;
+  top: 5%;
+  position: fixed;
+  border: 3px solid #f1f1f1;
+  font-family: sans-serif; 
+
+  padding: 20px;
+  margin-left: 20%;
+  margin-bottom: 20%;
+  z-index: 10000;
+
+  background-color: white;
+}
+
+.order-num{
+  display: flex; 
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.order-num button{
+  border: 0px;
+  
+}
+
+.order-date{
+  display: flex; 
+  flex-direction: row;
+}
+
+.order-total{
+  display: flex; 
+  flex-direction: row;
+}
+
+.order-table th{
+  background-color: white; 
+  border-bottom-color: gray;
+  border-bottom: 1px solid;
+  border-top: none; 
+  border-left: none; 
+  border-right: none;
+  font-size: 15px;
+}
+
+.order-table img{
+  width: 150px;
+  height: 150px;
+}
+
+
+
+.order-table {
+  border: none;
+}
+
+.order-sub {
+  width: 136%;
+  display: flex; 
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.order-tax{
+  width: 100%;
+  display: flex; 
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.order-dc{
+  width: 100%;
+  display: flex; 
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.discount-amt {
+  color: red;
+}
+
+.order-ttl{
+  width: 100%;
+  display: flex; 
+  flex-direction: row;
+  justify-content: space-between;
+  font-style: bold;
+  font-weight: bold;
+}
+
+.order-btns{
+  height: 25px;
+  display: flex; 
+  flex-direction: row;
+  width: 30%; 
+  justify-content: space-between;
+  margin-left: 35%;
+}
+
+.buttons {
+  font-size: 15px;
+  border: none;
+  background-color: lightgray;
+  color: black;
+}
+
+.buttons:hover {
+  background-color: gray;
+}
+
+.order-popup{
+  color:#231f20;
+}
