@@ -1,6 +1,6 @@
 const mysql = require('mysql2');
 const fs = require('fs');
-const { host, user, password, database, ca} = require('./config');
+const { host, user, password, database, ca} = require('./config.js');
 
 const pool = mysql.createPool({
     host,
@@ -8,8 +8,8 @@ const pool = mysql.createPool({
     password,
     database,
     ssl : {
-        ca: fs.readFileSync( 'c:/Users/sierr/OneDrive/Desktop/COMPSCI/test/' + ca),
+        ca: fs.readFileSync("C:\\Users\\Delon Perry\\Dropbox\\PC\\Documents\\SEPROJ\\software-engineering-fa23-group-assignment\\" + ca)
     }
-})
+});
 
 module.exports = pool.promise();
