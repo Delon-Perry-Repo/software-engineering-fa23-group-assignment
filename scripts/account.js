@@ -9,7 +9,7 @@ let imageLoc = ['../res/item1.png', '../res/item2.png', '../res/item3.png' , '..
 let imgElement = '';
 let isOn = 0;
 
-addItems();
+// addItems();
 
 
 /* adds items to the main page*/

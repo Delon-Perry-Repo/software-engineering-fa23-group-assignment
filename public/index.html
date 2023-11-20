@@ -20,7 +20,7 @@
         <div id="navBar">
             <div id="leftBar">
                 <input type="image" src="../res/accountIcon.png" class="button" id="accountButton" alt="Account"
-                    onclick="document.getElementById('id01').style.display='block'" style="width:auto;">
+                    onclick="document.getElementById('id01').style.display='block'" style="width:auto;"> 
                 <div id="id01" class="modal">
                     <form class="modal-content animate" action="/action_page.php" method="post">
                         <div class="container" style="background-image: url(/res/UTeeSA_Banner.png);">
@@ -64,7 +64,8 @@
                                 name="confirmnewpsw" required>
                             <p class="validation-container" id="confPassStatus" style="width: 707px;"></p>
 
-                            <button type="submit" class="button-container" onclick="createUser()">Create Account</button>
+                            <button type="submit" class="button-container" onclick="createUser()">Create
+                                Account</button>
                             <hr class="hr-split">
                         </div>
                         <div class="container" style="background-image: url(../res/UTeeSA_Banner.png);">
@@ -73,8 +74,8 @@
                         </div>
                     </form>
                 </div>
-                <input type="image" src="../res/filterIcon.png" class="button" id="filterButton"
-                    onclick="toggleFilter()" alt="Filter">
+                <input type="image" src="../res/TShirt2.png" class="button" id="shirtButton" alt="Product" 
+                    onclick="window.location.href='../public/shop.html'; ">
             </div>
             <div id="rightBar">
                 <input type="image" src="../res/searchIcon.png" class="button" id="searchButton"
@@ -86,42 +87,7 @@
 
     </div>
     <hr class="inv-break">
-    <div id="body">
-        <div id="filterPopUp" class="filter-div" style="background: url(../res/item13.png);">
-            <form>
-                <fieldset style="width: 500px; height: 1200px;">
-                    <legend>Main Options:</legend>
 
-                    <!-- Main options as radio inputs -->
-                    <label>
-                        <input type="radio" name="mainOption" value="option1" onclick="showSubOptions('subOptions1')">
-                        By Price
-                    </label>
-
-                    <label>
-                        <input type="radio" name="mainOption" value="option2" onclick="showSubOptions('subOptions2')">
-                        By Availability
-                    </label>
-
-                    <!-- Sublist of options for Option 1 -->
-                    <ul id="subOptions1" style="display:none;">
-                        <li>
-                            <label>
-                                <input type="radio" name="subOption" value="subOption1"> Highest to Lowest
-                            </label>
-                        </li>
-                        <li>
-                            <label>
-                                <input type="radio" name="subOption" value="subOption2"> Lowest to Highest
-                            </label>
-                        </li>
-                    </ul>
-
-                </fieldset>
-            </form>
-        </div>
-        <div id="table"></div>
-    </div>
     <div id="footer"></div>
     <script src="../scripts/account.js"></script>
     <script src="../scripts/validation.js"></script>

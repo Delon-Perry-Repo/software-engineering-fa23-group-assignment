@@ -72,6 +72,7 @@ hr {
     display: flex;
     justify-content: flex-start;
     width: 50%;
+
 }
 
 #rightBar {
@@ -105,6 +106,11 @@ hr {
 #searchButton {
     background-color: none;
     margin-right: 5%;
+}
+
+#shirtButton {
+    background-color: none;
+    margin-left: 5%;
 }
 
 #cartButton {
