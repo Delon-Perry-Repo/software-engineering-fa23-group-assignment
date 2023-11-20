@@ -20,7 +20,7 @@
         <div id="navBar">
             <div id="leftBar">
                 <input type="image" src="../res/accountIcon.png" class="button" id="accountButton" alt="Account"
-                    onclick="document.getElementById('id01').style.display='block'" style="width:auto;"> 
+                    onclick="document.getElementById('id01').style.display='block'" style="width:auto;">
                 <div id="id01" class="modal">
                     <form class="modal-content animate" action="/action_page.php" method="post">
                         <div class="container" style="background-image: url(/res/UTeeSA_Banner.png);">
@@ -74,8 +74,10 @@
                         </div>
                     </form>
                 </div>
-                <input type="image" src="../res/TShirt2.png" class="button" id="shirtButton" alt="Product" 
+                <input type="image" src="../res/TShirt2.png" class="button" id="shirtButton" alt="Product"
                     onclick="window.location.href='../public/shop.html'; ">
+                <input type="image" src="../res/faq.webp" class="button" id="FAQButton" alt="FAQ"
+                    onclick="window.location.href='../public/support.html';" style="margin-left: 50px;">
             </div>
             <div id="rightBar">
                 <input type="image" src="../res/searchIcon.png" class="button" id="searchButton"
@@ -93,10 +95,13 @@
     <script src="../scripts/validation.js"></script>
 
 
-    <footer class="py-5 bg-white" style="background-image: url('../res/UTeeSA_Banner.png'); background-position: center;">
+    <footer class="py-5 bg-white"
+        style="background-image: url('../res/UTeeSA_Banner.png'); background-position: center;">
         <div class="container">
             <!-- Optional content within the footer -->
-            <strong><p style="color: #f1f1f1; text-align: center;"><b>Copyright &copy; UTeeSA 2023</b></p></strong>
+            <strong>
+                <p style="color: #f1f1f1; text-align: center;"><b>Copyright &copy; UTeeSA 2023</b></p>
+            </strong>
         </div>
     </footer>
 </body>

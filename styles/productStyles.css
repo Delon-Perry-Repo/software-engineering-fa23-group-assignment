@@ -359,6 +359,12 @@ textarea {
   line-height: inherit;
 }
 
+a:visited {
+  color: black;
+  background-color: transparent;
+  text-decoration: none;
+}
+
 button,
 select {
   text-transform: none;
