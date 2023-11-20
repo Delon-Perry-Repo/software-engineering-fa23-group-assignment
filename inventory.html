@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Inventory</title>
+    <link href="styles/inventory.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="scripts/admin.js"></script> 
+  </head>
+
+    
+
+  <body>
+    <div class="header">
+      
+      <div class="header-left">
+
+        <ul>
+          <li><img src="img/uteesa_logo.png" id="logo"></li>
+          <li id="header-subtitle">STORE INVENTORY</li>
+        </ul>
+      
+      </div>
+    
+    
+      <div class="navbar">
+      
+        <ul>
+          <li id="return"><a href="./admin.html">HOME</a></li>
+        </ul>
+      
+      </div>
+
+      </div>
+
+      <div class="navButtons">
+        <button onclick=loadShirts()>LOAD SHIRTS</button>
+        <button onclick=openForm()>CREATE NEW SHIRT</button>
+      </div>
+
+      <div class="inv" id="inv">
+        
+      </div>
+
+      <div id="editForm">
+        <div class="editFormCont">
+          <h2 id="editItemNum">Edit Item #</h2>
+
+          <div class="editInput">
+            <p>Item Name:</p>
+            <input type="text" id="item-name">
+          </div>
+
+          <div class="editInput">
+            <p>Item Price:</p>
+            <input type="text" id="item-price">
+          </div>
+
+          <div class="editInput">
+            <p>Item Description:</p>
+            <input type="text" id="item-desc">
+          </div>
+          
+          <div class="editInput">
+            <p>Item Material:</p>
+          <input type="text" id="item-material">
+          </div>
+          
+          <div class="editInput">
+            <p>Item Size:</p>
+
+            <select name="sizes" id="sizes">
+            <option value="default" id="default-opt">Choose a selection</option>
+            <option value="XS">Extra Small</option>
+            <option value="S">Small</option>
+            <option value="M">Medium</option>
+            <option value="L">Large</option>
+            <option value="XL">Extra Large</option>
+            <option value="XXL">Extra Extra Large</option>
+            </select>
+
+            <button class="btn" onclick="saveShirt()">Save</button>
+            <button class="btn" onclick="closeEditForm()">Close</button>
+          </div>
+
+          
+
+          
+
+          
+
+
+
+          
+        </div>
+      </div>
+
+
+    <div class="form-popup" id="myForm">
+
+      <div class="form-container">
+
+        <h2>Create New Inventory Item</h2>
+
+        <label for="item-name"><b>Item Name</b></label>
+        <input type="text" placeholder="Enter item name" id="item-name1">
+
+        <label for="item-number"><b>Item Number</b></label>
+        <input type="text" placeholder="Enter item number" id="item-number1">
+
+        <label for="item-price"><b>Item Price</b></label>
+        <input type="text" placeholder="Enter item price" id="item-price1">
+
+        <label for="item-desc"><b>Item Description</b></label>
+        <input type="text" placeholder="Enter item descripion" id="item-desc1">
+
+        <label for="item-material"><b>Item Material</b></label>
+        <input type="text" placeholder="Enter item material" id="item-material1">
+
+
+
+        <label for="sizes">Choose a size:</label>
+
+        <select name="sizes" id="sizes1">
+        <option value="default" id="default-opt">Choose a selection</option>
+        <option value="XS">Extra Small</option>
+        <option value="S">Small</option>
+        <option value="M">Medium</option>
+        <option value="L">Large</option>
+        <option value="XL">Extra Large</option>
+        <option value="XXL">Extra Extra Large</option>
+        </select>
+
+        <div class="createBtns">
+          <button type="submit" onclick="createShirt()">CREATE</button>
+          <button type="button" onclick="closeNewShirt()">CLOSE</button>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div id="confirmShirt">
+
+      <h3>Confirm new shirt?</h3>
+      <p id="newName"></p>
+      <p id="newNumber"></p>
+      <p id="newPrice"></p>
+      <p id="newDesc"></p>
+      <p id="newMaterial"></p>
+      <p id="newSize"></p>
+      <button id="confirm-new-shirt">Confirm</button>
+      <button>Edit Shirt</button>
+
+    </div>
+    
+  </body>
+
+  
+  
+</html>

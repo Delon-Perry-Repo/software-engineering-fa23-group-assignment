@@ -4,20 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/productStyles.css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="styles/home.css">
     <title>UTeeSA</title>
 </head>
 <body>
 
     <section id="header">
-        <a href="#"><img src="res/logo.PNG" class="logo" width="120" height="80" alt=""></a>
+        <a href="#"><img src="res/newLogo.PNG" class="logo" width="120" height="80" alt=""></a>
 
         <div>
             <ul id="navbar">
                 <li><a class="active" href="home.html">Home</a></li>
-                <li><a href="index.html">Shop</a></li>
+                <li><a href="index2.html">Shop</a></li>
                 <li><a href="account.html">Account</a></li>
-                <li><a href="home.html"><img src="res/cartIcon.PNG"></i></a></li>
+                <li><a href="login.html">Admin</a></li>
+                <li><a href="support.html">Support</a></li>
             </ul>
         </div>
     </section>
@@ -27,8 +29,15 @@
         <h2>Valuable deals</h2>
         <h1>On Voting T-Shirts</h1>
         <p>Save more with our current discounts!</p>
-        <button onclick="window.location.href = 'index.html';"></button>
+        <button onclick="window.location.href = 'index2.html';"></button>
     </section>
+
+    <footer class="py-5 bg-white" style="background-image: url('res/UTeeSA_Banner.png'); background-size: cover; background-position: center;">
+        <div class="container">
+            <!-- Optional content within the footer -->
+            <strong><p class="m-0 text-center text-white">Copyright &copy; UTeeSA 2023</p></strong>
+        </div>
+    </footer>
 
     <script src="scripts/home.js"></script>
 </body>

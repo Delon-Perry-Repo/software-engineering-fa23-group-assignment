@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>UTeeSA Admin</title>
+  <link href="styles/admin.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+  <div class="header">
+
+
+    <div class="header-left">
+
+      <ul>
+        <li><img src="img/uteesa_logo.png" id="logo"></li>
+        <li id="header-subtitle">ADMINISTRATIVE</li>
+      </ul>
+
+    </div>
+
+
+    <div class="navbar">
+
+      <ul>
+        <li id="return"><a id="returnHome" href="./home.html">HOME</a></li>
+      </ul>
+
+    </div>
+
+  </div>
+
+  <div id="options">
+    
+    <div id="inv">
+      <h4>INVENTORY</h4>
+
+      <button id="all-items-button" onclick="seeInventory()">View All Items</button>
+    </div>
+
+    <div id="ord">
+      <h4>ORDERS</h4>
+      <button id="history" onclick="openCurrent()">View Orders</button>
+      <button id="current" onclick="openCurrentCodes()">View Active Codes</button>
+      <button id="Discount Codes" onclick="createDiscountCode()">Create Discount Codes</button>
+    </div>
+
+    <div id="user">
+      <h4>USERS</h4>
+      <!--
+        <button id="create-user" onclick="createUser()">Create New User</button>
+        -->
+      <button id="usr-search-button" onclick="searchUsers()">Search for Users</button>
+    </div>
+
+  </div>
+
+  <div class="dcCodes" id="dc-Codes">
+    <h4>Create Discount Code</h4>
+    <input type="text" id="dc-code" placeholder="Enter Discount Code..."></input>
+    <input type="number" id="percent-off" placeHolder="Enter percent off..."></input>
+
+    <div class="dc-buttons">
+      <button onclick="saveCode()">SAVE</button>
+      <button onclick="saveCode()">CANCEL</button>
+    </div>
+
+  </div>
+
+  <div class="dc-code-table" id="dc-tables">
+    <h2 id="hey">EXISTING DISCOUNT CODES</h2>
+    <table class="dc-table" id="dc-tables1">
+      <tr>
+        <th>CODE</th>
+        <th>PERCENT OFF</th>
+      </tr>
+
+      <tbody id="dcBody">
+
+      </tbody>
+
+    </table>
+
+    <button onclick="closeDc()">CLOSE</button>
+
+  </div>
+
+  <script src="scripts/admin.js"></script>
+</body>
+
+</html>
