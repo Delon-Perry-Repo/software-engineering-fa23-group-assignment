@@ -44,7 +44,7 @@
                     </form>
                 </div>
                 <div id="id02" class="modal" style="display: none">
-                    <form class="modal-content animate" action="../public/index.html" method="post">
+                    <form class="modal-content animate" id="newAccount" action="/newUser" method="post">
                         <div class="container" style="background-image: url(/res/UTeeSA_Banner.png);">
                             <h1>Create New Account</h1>
                             <label for="newuname"><b>New Username</b></label>
@@ -64,7 +64,7 @@
                                 name="confirmnewpsw" required>
                             <p class="validation-container" id="confPassStatus" style="width: 707px;"></p>
 
-                            <button type="submit" class="button-container" onclick="createUser()">Create
+                            <button type="submit" class="button-container">Create
                                 Account</button>
                             <hr class="hr-split">
                         </div>
@@ -93,6 +93,7 @@
     <div id="footer"></div>
     <script src="../scripts/account.js"></script>
     <script src="../scripts/validation.js"></script>
+
 
 
     <footer class="py-5 bg-white"
