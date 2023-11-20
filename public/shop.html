@@ -12,17 +12,18 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="../styles/productStyles.css" rel="stylesheet" />
+        
     </head>
     <body>
         <!-- Navigation-->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container px-4 px-lg-5">
-				<a class="navbar-brand" href="../public/index.html"><font color="white"><strong>UteeSA</strong></font></a>
+				<a class="navbar-brand" href="../public/index.html" style="margin-left: auto;"><font color="white"><strong>UteeSA</strong></font></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
 						<li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><font color="white"><strong>Home</strong></font></a>
+                            <a class="nav-link dropdown-toggle button" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><font color="white"><strong>Home</strong></font></a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
                                 <li><a class="dropdown-item" href="shop.html">All Products</a></li>
                                 <li><hr class="dropdown-divider" /></li>
@@ -30,11 +31,12 @@
                                 <li><a class="dropdown-item" href="productPage.html">New Arrivals</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="account.html"><font color="white"><strong>Account</strong></font></a></li>
-                        <li class="nav-item"><a class="nav-link" href="support.html"><font color="white"><strong>Help and Support</strong></font></a></li>
+                        <li class="nav-item"><a class="nav-link active button" aria-current="page" href="account.html"><font color="white"><strong>Account</strong></font></a></li>
+                        <li class="nav-item"><a class="nav-link active button" aria-current="page"  style="margin-left: 11px;"  onclick="toggleFilter()"><font color="white"><strong>Filter</strong></font></a></li>
+                        <li class="nav-item"><a class="nav-link button" href="support.html" style="margin-left: 11px;"><font color="white"><strong>Help and Support</strong></font></a></li>
                     </ul>
-					<form id="cartForm" class="d-flex">
-						<button type="button" class="btn btn-outline-light" onclick="window.location.href='shoppingCart.html';">
+					<form id="cartForm" class="d-flex" >
+						<button type="button" class="btn btn-outline-light" style="margin-right: auto;" onclick="window.location.href='shoppingCart.html';">
 							<i class="bi-cart-fill me-1"></i>
 							Cart
 							<span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
@@ -256,7 +258,7 @@
             </div>
         </section>
         <!-- Footer-->
-        <footer class="py-5 bg-white" style="background-image: url('../res/UTeeSA_Banner.png'); background-size: cover; background-position: center;">
+        <footer class="py-5 bg-white" style="background-image: url('../res/UTeeSA_Banner.png'); background-position: center;">
 			<div class="container">
 				<!-- Optional content within the footer -->
 				<strong><p class="m-0 text-center text-white">Copyright &copy; UTeeSA 2023</p></strong>
@@ -265,6 +267,5 @@
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
-        <script src="../scripts/shopScripts.js"></script>
     </body>
 </html>
