@@ -1,5 +1,0 @@
-HOST=ecomserver.mysql.database.azure.com
-USER=admen
-PASSWORD=P@$$W0rd
-DATABASE=ecom
-CA=DigiCertGlobalRootCA.crt.pem
