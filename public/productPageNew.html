@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>Shop Item - UTeeSa </title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="../res/favicon.ico" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="../styles/productStyles.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand" href="../public/index.html" style="margin-left: auto;"><font color="white"><strong>UteeSA</strong></font></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle button" id="navbarDropdown" href="../public/shop.html" role="button" data-bs-toggle="dropdown" aria-expanded="false"><font color="white"><strong>Home</strong></font></a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="../public/shop.html">All Products</a></li>
+                            <li><hr class="dropdown-divider" /></li>
+                            <li><a class="dropdown-item" href="../public/productPagePopular.html">Popular Items</a></li>
+                            <li><a class="dropdown-item" href="../public/productPageNew.html">New Arrivals</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a class="nav-link active button" aria-current="page" href="account.html"><font color="white"><strong>Account</strong></font></a></li>
+                    <li class="nav-item"><a class="nav-link button" href="../public/support.html" style="margin-left: 11px;"><font color="white"><strong>Help and Support</strong></font></a></li>
+                </ul>
+                <form id="cartForm" class="d-flex" >
+                    <button type="button" class="btn btn-outline-light" style="margin-right: auto;" onclick="window.location.href='shoppingCart.html';">
+                        <i class="bi-cart-fill me-1"></i>
+                        Cart
+                        <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- Product section-->
+    <section class="py-5 bg-black">
+        <div class="container px-4 px-lg-5 my-5">
+            <h1 style="color: white; text-align: center; font-family: sans-serif ;"><b>Newest Arrival</b></h1>
+            <hr style="color: white;">
+            &nbsp;
+            <div class="row gx-4 gx-lg-5 align-items-center">
+                <div class="col-md-6"><img src="../res/item11.png" wdith="350" height="500" alt="Product 11 image" /></div>
+                <div class="col-md-6">
+                    <h1 class="display-5 fw-bolder">
+                        <font color="white">UTeeSA Retro Shirt</font>
+                    </h1>
+                    <div class="fs-5 mb-5">
+                        <span>
+                            <font color="white">$45.00</font>
+                        </span>
+                    </div>
+                    <p class="lead">
+                        <font color="white">Introducing our classic shirt, a fusion of timeless style and modern
+                            comfort. Meticulously crafted with premium fabric, it boasts a tailored fit and versatile
+                            design. From casual outings to semi-formal occasions, this shirt effortlessly elevates your
+                            look, making it a must-have in every wardrobe.</font>
+                    </p>
+                    <div class="d-flex">
+                        <input class="form-control text-center me-3" id="inputQuantity" type="num" value="1"
+                            style="max-width: 3rem" />
+                        <button class="btn btn-outline-light flex-shrink-0" type="button">
+                            <i class="bi-cart-fill me-1"></i>
+                            <font color="white">
+                                Add to cart
+                            </font>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Related items section-->
+    <section class="py-5 bg-black">
+        <div class="container px-4 px-lg-5 mt-5">
+            <h2 class="fw-bolder mb-4">
+                <font color="white">Our Newest Arrivals</font>
+            </h2>
+            <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Product image-->
+                        <img class="card-img-top" src="../res/item1.png" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder"><a href="../public/productPage.html">Fancy Product</a></h5>
+                                <!-- Product price-->
+                                $40.00 - $80.00
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Product image-->
+                        <img class="card-img-top" src="../res/item2.png" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder"><a href="../public/productPage.html">Special Item</a></h5>
+                                <!-- Product reviews-->
+                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                </div>
+                                <!-- Product price-->
+                                <span >$20.00</span>
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Product image-->
+                        <img class="card-img-top" src="../res/item3.png" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder"><a href="../public/productPage.html">Popular Item</a></h5>
+                                <!-- Product price-->
+                                <span>$50.00</span>
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col mb-5">
+                    <div class="card h-100">
+                        <!-- Product image-->
+                        <img class="card-img-top" src="../res/item8.png" alt="..." />
+                        <!-- Product details-->
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <!-- Product name-->
+                                <h5 class="fw-bolder"><a href="../public/productPage.html">Popular Item</a></h5>
+                                <!-- Product reviews-->
+                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                </div>
+                                <!-- Product price-->
+                                $40.00
+                            </div>
+                        </div>
+                        <!-- Product actions-->
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add to cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Footer-->
+    <footer class="py-5 bg-white"
+        style="background-image: url('../../res/UTeeSA_Banner.png'); background-position: center;">
+        <div class="container">
+            <!-- Optional content within the footer -->
+            <strong>
+                <p class="m-0 text-center text-white">Copyright &copy; UTeeSA 2023</p>
+            </strong>
+        </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+</body>
+
+</html>

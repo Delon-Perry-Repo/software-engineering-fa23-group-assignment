@@ -3,7 +3,7 @@ const fs = require('fs');
 const { host, user, password, database, ca} = require('./config');
 
 // dirname is the path to your .pem key
-const dirname = 'C:/Users/sierr/OneDrive/Desktop/COMPSCI/SWE PROJECT/software-engineering-fa23-group-assignment/'
+const dirname = 'C:\\Users\\Delon Perry\\Dropbox\\PC\\Documents\\SEPROJ\\software-engineering-fa23-group-assignment\\'
 
 const connection = mysql.createConnection({
     host,
