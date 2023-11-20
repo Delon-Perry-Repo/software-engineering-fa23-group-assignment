@@ -465,6 +465,18 @@ legend + * {
   -webkit-appearance: button;
 }
 
+.button {
+  margin-top: 2px;
+  width: auto;
+  height: auto;
+  object-position: center bottom;
+}
+
+.button:hover {
+  background-color: rgba(186, 186, 186, 0.5);
+  transition: 0.7s;
+}
+
 output {
   display: inline-block;
 }
@@ -3754,7 +3766,6 @@ textarea.form-control-lg {
   padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x);
 	
   background-image: url("../res/UTeeSA_Banner.png"); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
-  background-size: cover; /* Ensures the image covers the entire background */
   background-position: center; /* Centers the image */
 }
 .navbar > .container,
