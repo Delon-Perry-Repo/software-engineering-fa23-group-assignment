@@ -8,7 +8,7 @@ const pool = mysql.createPool({
     password,
     database,
     ssl : {
-        ca: fs.readFileSync( 'c:/Users/sierr/OneDrive/Desktop/COMPSCI/test/' + ca),
+        ca: fs.readFileSync( 'c:/Users/sierr/OneDrive/Desktop/COMPSCI/SWE PROJECT/software-engineering-fa23-group-assignment/' + ca),
     }
 })
 

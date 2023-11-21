@@ -91,9 +91,10 @@ var userName = document.getElementById('newuname');
 var userPassword = document.getElementById('newpsw');
 var userPasswordConf = document.getElementById('confirmnewpsw');
 
-userEmail.addEventListener('blur', function () {
+let userEmailValidation = userEmail.addEventListener('blur', function () {
   checkFieldEmail(userEmail);
 }, false);
+console.log(userEmailValidation);
 
 userName.addEventListener('blur', function () {
   checkFieldUserName(userName);
@@ -106,3 +107,21 @@ userPassword.addEventListener('blur', function () {
 userPasswordConf.addEventListener('blur', function () {
   confirmPassword(userPassword, userPasswordConf);
 }, false);
+
+/*
+function createUser(){
+  let response = fetch( 'http://localhost:5000/user/', {
+    method: "POST",
+    body: '{ "name": "' + userName + '", "type": "user", "password": "' + userPassword + '", "email": "' + userEmail + '" } '
+})
+.then((res) => {
+    if (response != 201){
+      throw new Error('something went wrong');
+    }
+})
+.catch( (err) => {
+  console.error(err);
+})
+}
+
+*/
