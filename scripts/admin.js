@@ -135,6 +135,10 @@ function searchUsers(){
 
 function searchUser() {
 
+  let userBody = document.getElementById('userBody');
+  userBody.replaceChildren();
+  console.log('cleared the table');
+
   var inputField = document.getElementById("search-input");
   inputField.style.borderColor = "black";
   inputField.style.borderWidth = "thin";
@@ -502,7 +506,7 @@ function loadShirts(){
     picInfo.setAttribute("class", "pic-info");
     var img = document.createElement("img");
 
-    var img1 = "img/";
+    var img1 = "res/";
     var img2 = ".png";
     var imgSrc = img1.concat(val.name);
     imgSrc = imgSrc.concat(img2);
