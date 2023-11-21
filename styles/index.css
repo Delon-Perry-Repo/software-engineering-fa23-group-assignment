@@ -124,12 +124,9 @@ hr {
 }
 .button {
     margin-top: 2px;
-    width: 5%;
+    width: 10%;
     object-position: center bottom;
-
 }
-
-
 .button:hover {
     background-color: rgba(186, 186, 186, 0.5);
     transition: 0.7s;

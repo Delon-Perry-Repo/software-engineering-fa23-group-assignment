@@ -359,7 +359,6 @@ textarea {
   line-height: inherit;
 }
 
-
 button,
 select {
   text-transform: none;
@@ -465,7 +464,6 @@ legend + * {
   font: inherit;
   -webkit-appearance: button;
 }
-
 
 output {
   display: inline-block;
@@ -3756,6 +3754,7 @@ textarea.form-control-lg {
   padding: var(--bs-navbar-padding-y) var(--bs-navbar-padding-x);
 	
   background-image: url("../res/UTeeSA_Banner.png"); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
+  background-size: cover; /* Ensures the image covers the entire background */
   background-position: center; /* Centers the image */
 }
 .navbar > .container,
