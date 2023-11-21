@@ -40,12 +40,14 @@
           <button onclick="test(currOrders)">Show Active Orders</button>
           <button onclick="sortByDate(currOrders)">Sort Active by Date</button>
           <button onclick="sortByCustomer(currOrders)">Sort Active by Customer</button>
+          <button onclick="sortByPrice(currOrders)" id="priceBtn">Sort Active by Price</button>
         </div>
   
         <div class="done">
           <button onclick="loadComplete(pastOrders)">Show Completed Orders</button>
           <button onclick="sortByDate(pastOrders)">Sort Completed by Date</button>
           <button onclick="sortByCustomer(pastOrders)">Sort Completed by Customer</button>
+          <button onclick="sortByPrice(pastOrders)" id="priceBtn">Sort Completed by Price</button>
         </div>
 
         <button onclick="resetOrders()">Reset Orders</button>
