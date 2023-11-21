@@ -16,6 +16,7 @@ function renderProdcuts() {
                     <div class="desc">
                         <h2>${product.name}</h2>
                         <h2><small>$</small>${product.price}</h2>
+                        <p>${product.instock} in stock!</p>
                         <p>
                             ${product.description}
                         </p>
@@ -73,6 +74,14 @@ function renderSubtotal() {
     totalPrice += item.price * item.numberOfUnits;
     totalItems += item.numberOfUnits;
   });
+
+  var input = document.getElementById("discount").value;
+
+  if(input === "fifty") {
+    totalPrice = totalPrice * 0.5;
+  } else if(input === "cool" && cart.find((item) => item.id == 1)) {
+    totalPrice = totalPrice - 5;
+  }
 
   totalPrice += totalPrice * taxRate;
   subtotalEl.innerHTML = `Subtotal (${totalItems} items): $${totalPrice.toFixed(2)}`;
@@ -140,4 +149,31 @@ function changeNumberOfUnits(action, id) {
   });
 
   updateCart();
+}
+
+//sorts products
+function sortProducts(action) {
+  if(action === "lowestPrice") {
+    products.sort((firstItem, secondItem) => firstItem.price - secondItem.price);
+  } else if(action === "highestPrice") {
+    products.sort((secondItem, firstItem) => firstItem.price - secondItem.price);
+  } else if(action === "leastInStock") {
+    products.sort((firstItem, secondItem) => firstItem.instock - secondItem.instock);
+  } else if(action === "mostInStock") {
+    products.sort((secondItem, firstItem) => firstItem.instock - secondItem.instock);
+  } else if(action === "mostRecent") {
+    products.sort((firstItem, secondItem) => firstItem.id - secondItem.id);
+  } else if(action === "leastRecent") {
+    products.sort((secondItem, firstItem) => firstItem.id - secondItem.id);
+  } else if(action === "searchByName") {
+    temp = products.filter((a) => a.name === document.getElementById("search").value);
+    //products.unshift(temp);
+  }
+  
+  productsEl.innerHTML = "";
+  renderProdcuts();
+}
+
+function applyDiscount() {
+  renderSubtotal();
 }
