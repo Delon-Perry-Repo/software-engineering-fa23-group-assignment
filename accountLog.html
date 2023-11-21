@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="#">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Page</title>
+    <link href="styles/productStyles.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" type="text/css" href="../styles/main_page.css">
+    <link rel="stylesheet" href="styles/account.css">
+</head>
+<body style="background: url(res/item13.png);">
+
+    <section id="header">
+        <a href="./home.html"><img src="res/newLogo.PNG" class="logo" width="120" height="80" alt=""></a>
+    
+        <div>
+            <ul id="navbar">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="index2.html">Shop</a></li>
+                <li><a href="account.html">Account</a></li>
+                <li><a href="login.html">Admin</a></li>
+                <li><a href="support.html">Support</a></li>
+            </ul>
+        </div>
+    </section>
+    <div id="container" >
+        <button onclick="toggleTextField('text1')" style="width: 100%;">Update Account Username</button>
+        <button onclick="toggleTextField('text2')" style="width: 100%; padding-bottom: 10px;">Update Account Email</button>
+    
+        <div id="text1" class="hidden text-field">
+            <input type="text" placeholder="Enter text...">
+            <button onclick="submitText('uname')">Submit</button>
+        </div>
+    
+        <div id="text2" class="hidden text-field">
+            <input type="text" placeholder="Enter text...">
+            <button onclick="submitText('email')">Submit</button>
+        </div>
+    </div>
+    
+    </div>
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    <footer class="py-5 bg-white" style="background-image: url('res/UTeeSA_Banner.png');  background-position: center;">
+        <div class="container">
+            <!-- Optional content within the footer -->
+            <strong><p class="m-0 text-center text-white">Copyright &copy; UTeeSA 2023</p></strong>
+        </div>
+    </footer>
+<script src="../scripts/validation.js"></script>
+<script src="../scripts/account.js"></script>
+</body>
+</html>

@@ -11,6 +11,8 @@ app.use("/user", require("./routes/userRoutes"));
 app.use("/tshirt", require("./routes/tshirtRoutes"));
 app.use("/orders", require("./routes/ordersRoutes"));
 app.use("/discount", require("./routes/discountRoutes"));
+app.use('/create', require("./routes/userRoutes"));
+
 
 app.get('/', (req, res) => {
     res.send("hello");

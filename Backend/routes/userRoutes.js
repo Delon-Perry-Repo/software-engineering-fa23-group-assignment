@@ -1,5 +1,10 @@
 const express= require('express');
 const router = express.Router();
+
+const cors = require('cors');
+
+app.use(cors());
+
 const {
     getAllUsers,
     getUser,

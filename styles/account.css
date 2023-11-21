@@ -1,0 +1,63 @@
+/* formStyles.css */
+
+.form-container {
+    width: 45%;
+}
+
+.form-container form {
+    margin: 0; /* Remove default margin on form elements */
+}
+
+.form-container .container {
+    width: 100%;
+    box-sizing: border-box;
+    background-color: black;
+    padding: 16px;
+    color: white;
+    border: 8px solid white;
+    border-radius: 8px;
+    opacity: 95%;
+}
+
+.form-container h1,
+.form-container label,
+.form-container input,
+.form-container button {
+    
+    margin-bottom: 10px;
+}
+
+.form-container button {
+    cursor: pointer;
+}
+
+.form-container hr.hr-split {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.form-container span.psw {
+    display: block;
+    margin-top: 10px;
+    color: #f1f1f1;
+}
+
+#container {
+    width: 200px;
+    height: 250px;
+    position: relative;
+    border: 3px solid white;
+    border-radius: 8px;
+    background-color: black;
+    margin-left: 850px;
+    margin-top: 250px;
+    margin-bottom: 250px;
+}
+
+.hidden {
+    display: none;
+}
+
+.text-field {
+    margin-top: 10px;
+}
