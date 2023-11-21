@@ -69,19 +69,6 @@ function closeCode(){
   document.getElementById("dc-Codes").style.display = "none";
 }
 
-/**
- *  loadData() function loads data from the database 
- *  creates the array inventory -> array of shirt objects 
- *  creates the currOrders array -> array of active orders objects
- *  creates the pastOrders array -> array of completed orders objects
- *  creates the users array -> array of user objects
- */
-/*
-function loadData() {
-
-}
-*/
-
 function User(first, last, id, contact, email){
   this.first = first; 
   this.last = last; 
@@ -412,6 +399,8 @@ function createShirt(){
   var shirt = new Shirt(name, number, size, price, desc, mat);
 
   confirmShirt(shirt);
+
+
 }
 
 function removeShirt(buttonID){
@@ -629,11 +618,11 @@ var shirtsOrd3 = [catShirt, carharttShirt, figShirt, wildShirt];
 var shirtsOrd4 = [catShirt];
 var shirtsOrd5 = [carharttShirt, figShirt];
 
-var order5 = new Order("00001", "Janice Doe", "Complete", shirtsOrd3, "3", "29.99", "11/16/2023" );
+var order5 = new Order("00001", "Janice Doe", "Complete", shirtsOrd3, "4", "59.49", "11/16/2023" );
 
-var order4 = new Order("00002", "Johnny Doe", "Complete", shirtsOrd4, "1", "12.99", "11/01/2023" );
+var order4 = new Order("00002", "Johnny Doe", "Complete", shirtsOrd4, "1", "12.49", "11/01/2023" );
 
-var order6 = new Order("00003", "Annalyn Delvey", "Complete", shirtsOrd5, "2", "29.98", "11/03/2023" );
+var order6 = new Order("00003", "Bob Smith", "Complete", shirtsOrd5, "2", "26.03", "11/03/2023" );
 
 pastOrders.push(order5);
 pastOrders.push(order4);
@@ -763,15 +752,15 @@ function test(Orders){
 }
 
 
-  var shirtsOrd = [catShirt, carharttShirt, figShirt, wildShirt];
+  var shirtsOrd = [carharttShirt, figShirt, wildShirt];
   var shirtsOrd1 = [catShirt];
   var shirtsOrd2 = [carharttShirt, figShirt];
 
-  var order1 = new Order("12346", "Jane Doe", "Active", shirtsOrd, "3", "29.99", "11/16/2023" );
+  var order1 = new Order("12346", "Jane Doe", "Active", shirtsOrd, "3", "45.43", "11/16/2023" );
 
-  var order2 = new Order("12347", "John Doe", "Active", shirtsOrd1, "1", "12.99", "11/01/2023" );
+  var order2 = new Order("12347", "John Doe", "Active", shirtsOrd1, "1", "14.06", "11/01/2023" );
 
-  var order3 = new Order("12348", "Anna Delvey", "Active", shirtsOrd2, "2", "29.98", "11/03/2023" );
+  var order3 = new Order("12348", "Anna Smith", "Active", shirtsOrd2, "2", "32.48", "11/03/2023" );
 
   currOrders.push(order1);
   currOrders.push(order2);
@@ -1044,6 +1033,46 @@ function test(Orders){
     test(sortedArr);
     
   }
+
+function priceSort(price, key){
+  this.price = price; 
+  this.key = key;
+}
+
+
+function sortByPrice(arr){
+  var priceArr = new Array();
+  var sortedArr = new Array();
+
+  for(let i = 0; i < arr.length; i++){
+    var price = arr[i].price; 
+    var prSort = new priceSort(price, i);
+    priceArr.push(prSort);
+  }
+
+  priceArr.sort(function (a,b){
+    if (a.price < b.price) {
+      return -1;
+    }
+    if (a.price < b.price) {
+      return 1;
+    }
+    return 0;
+  });
+
+
+  for(i = 0; i < priceArr.length; i++){
+    var index = priceArr[i].key;
+
+    //sortedArr[i] = Object.assign({}, arr[index]);
+    sortedArr[i] = arr[index];
+
+
+  }
+
+  test(sortedArr);
+
+}
 
 function closeUserPopUp(){
   document.getElementById("userPopUp-content").style.display = "none";
