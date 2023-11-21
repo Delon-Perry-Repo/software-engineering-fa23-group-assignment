@@ -77,10 +77,14 @@ function renderSubtotal() {
 
   var input = document.getElementById("discount").value;
 
-  if(input === "fifty") {
-    totalPrice = totalPrice * 0.5;
-  } else if(input === "cool" && cart.find((item) => item.id == 1)) {
+  if(input === "BLACKFRIDAY") {
+    totalPrice = totalPrice - (totalPrice * 0.5);
+  } else if(input === "bruh" && cart.find((item) => item.id == 1)) {
     totalPrice = totalPrice - 5;
+  } else if (input === "ROWDY") {
+    totalPrice = totalPrice - (totalPrice * 0.23);
+  } else if (input === "SUMMER23") {
+    totalPrice = totalPrice - (totalPrice * 0.10);
   }
 
   totalPrice += totalPrice * taxRate;
@@ -166,8 +170,15 @@ function sortProducts(action) {
   } else if(action === "leastRecent") {
     products.sort((secondItem, firstItem) => firstItem.id - secondItem.id);
   } else if(action === "searchByName") {
-    temp = products.filter((a) => a.name === document.getElementById("search").value);
-    //products.unshift(temp);
+    products.sort(function (a, b) {
+      if(a.name < b.name) {
+          return -1;
+      }
+      if(a.name > b.name) {
+        return 1;
+      }
+      return 0;
+    });
   }
   
   productsEl.innerHTML = "";
