@@ -408,6 +408,8 @@ function createShirt(){
   var shirt = new Shirt(name, number, size, price, desc, mat);
 
   confirmShirt(shirt);
+
+
 }
 
 function removeShirt(buttonID){
@@ -1040,6 +1042,46 @@ function test(Orders){
     test(sortedArr);
     
   }
+
+function priceSort(price, key){
+  this.price = price; 
+  this.key = key;
+}
+
+
+function sortByPrice(arr){
+  var priceArr = new Array();
+  var sortedArr = new Array();
+
+  for(let i = 0; i < arr.length; i++){
+    var price = arr[i].price; 
+    var prSort = new priceSort(price, i);
+    priceArr.push(prSort);
+  }
+
+  priceArr.sort(function (a,b){
+    if (a.price < b.price) {
+      return -1;
+    }
+    if (a.price < b.price) {
+      return 1;
+    }
+    return 0;
+  });
+
+
+  for(i = 0; i < priceArr.length; i++){
+    var index = priceArr[i].key;
+
+    //sortedArr[i] = Object.assign({}, arr[index]);
+    sortedArr[i] = arr[index];
+
+
+  }
+
+  test(sortedArr);
+
+}
 
 function closeUserPopUp(){
   document.getElementById("userPopUp-content").style.display = "none";
