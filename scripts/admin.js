@@ -69,19 +69,6 @@ function closeCode(){
   document.getElementById("dc-Codes").style.display = "none";
 }
 
-/**
- *  loadData() function loads data from the database 
- *  creates the array inventory -> array of shirt objects 
- *  creates the currOrders array -> array of active orders objects
- *  creates the pastOrders array -> array of completed orders objects
- *  creates the users array -> array of user objects
- */
-/*
-function loadData() {
-
-}
-*/
-
 function User(first, last, id, contact, email){
   this.first = first; 
   this.last = last; 
@@ -627,11 +614,11 @@ var shirtsOrd3 = [catShirt, carharttShirt, figShirt, wildShirt];
 var shirtsOrd4 = [catShirt];
 var shirtsOrd5 = [carharttShirt, figShirt];
 
-var order5 = new Order("00001", "Janice Doe", "Complete", shirtsOrd3, "3", "29.99", "11/16/2023" );
+var order5 = new Order("00001", "Janice Doe", "Complete", shirtsOrd3, "4", "35.98", "11/16/2023" );
 
 var order4 = new Order("00002", "Johnny Doe", "Complete", shirtsOrd4, "1", "12.99", "11/01/2023" );
 
-var order6 = new Order("00003", "Annalyn Delvey", "Complete", shirtsOrd5, "2", "29.98", "11/03/2023" );
+var order6 = new Order("00003", "Bob Smith", "Complete", shirtsOrd5, "2", "26.03", "11/03/2023" );
 
 pastOrders.push(order5);
 pastOrders.push(order4);
@@ -761,7 +748,7 @@ function test(Orders){
 }
 
 
-  var shirtsOrd = [catShirt, carharttShirt, figShirt, wildShirt];
+  var shirtsOrd = [carharttShirt, figShirt, wildShirt];
   var shirtsOrd1 = [catShirt];
   var shirtsOrd2 = [carharttShirt, figShirt];
 
@@ -769,7 +756,7 @@ function test(Orders){
 
   var order2 = new Order("12347", "John Doe", "Active", shirtsOrd1, "1", "12.99", "11/01/2023" );
 
-  var order3 = new Order("12348", "Anna Delvey", "Active", shirtsOrd2, "2", "29.98", "11/03/2023" );
+  var order3 = new Order("12348", "Anna Smith", "Active", shirtsOrd2, "2", "29.98", "11/03/2023" );
 
   currOrders.push(order1);
   currOrders.push(order2);
